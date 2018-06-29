@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alexei Matusevski</title>
+    <meta name="description" content="Alexei Matusevski - I am Data Scientist with extensive software devlopment experience.">
+    <meta name="author" content="Alexei Matusevski" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="google-site-verification" content="TplhDelHikQyXZeQHjcAXcDLTTNn8PT_HoLgqJeuy6Y" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6378231-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-6378231-2');
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Student', 'QA', 'Software Developer', 'Team Lead', 'Data Scientist'],
+                ['2004', 1, 0, 0, 0, 0],
+                ['2005', 1, 0, 1, 0, 0],
+                ['2006', 1, 1, 1, 0, 0],
+                ['2007', 1, 0, 1, 0, 0],
+                ['2008', 1, 0, 1, 0, 0],
+                ['2009', 1, 0, 1, 0, 0],
+                ['2010', 0, 0, 1, 0, 0],
+                ['2011', 0, 0, 1, 0, 0],
+                ['2012', 0, 0, 1, 0, 0],
+                ['2013', 0, 0, 1, 0, 0],
+                ['2014', 0, 0, 1, 1, 0],
+                ['2015', 0, 0, 1, 1, 0],
+                ['2016', 0, 0, 1, 1, 0],
+                ['2017', 0, 0, 1, 1, 0],
+                ['2018', 1, 0, 1, 0, 1],
+                ['2019', 0, 0, 0, 0, 1],
+                ['2020', 0, 0, 0, 0, 1],
+                ['2021', 0, 0, 0, 0, 1],
+                ['2022', 0, 0, 0, 0, 1],
+                ['2023', 0, 0, 0, 0, 1]
+            ]);
+
+            var options = {
+                isStacked: 'relative',
+                title: 'Job Title',
+                hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
+                vAxis: { minValue: 0 }
+            };
+
+            var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Alexei Matusevski</h1>
+            <img src="me.jpeg" />
+        </header>
+        <section>
+            <article>
+                <h2>My Links</h2>
+                <ol>
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexeymatushevsky/">Linked In</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/shmalex">Github</a>
+                    </li>
+                    <li>
+                        <a href="http://blog.shmalex.net">My blog</a>
+                    </li>
+                    <li>
+                        <a href="https://kyso.io/amatusevski">Kyso.io</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ishmalex">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.thebodybazaar.com">The Body Bazaar</a>
+                    </li>
+                </ol>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Job Experience</h2>
+                <div id="chart_div" style="width: 100%; height: 350px;"></div>
+            </article>
+        </section>
+        <footer>
+            <time datetime="2018-06-29">2018 June 29</time>
+            <a href="mail:MAlexeyUS@gmail.com">Mail me</a>
+        </footer>
+    </article>
+</body>
+
+</html>
