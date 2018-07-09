@@ -50,6 +50,9 @@
             color: lightgray;
         }
 
+        .j,
+        .c,
+        .b,
         .p,
         .v,
         .a,
@@ -57,6 +60,9 @@
             color: lightgray;
         }
 
+        .j a,
+        .c a,
+        .b a,
         .p a,
         .v a,
         .a a,
@@ -68,23 +74,23 @@
             size: 20px;
         }
 
-        #jn-materials[type="checkbox"]:checked~article .j,
-        #c-materials[type="checkbox"]:checked~article .c,
-        #book-materials[type="checkbox"]:checked~article .b,
-        #pdf-materials[type="checkbox"]:checked~article .p,
-        #video-materials[type="checkbox"]:checked~article .v,
-        #article-materials[type="checkbox"]:checked~article .a,
-        #main-materials[type="checkbox"]:checked~article .m {
-            color: black;
+        #j-materials[type="checkbox"]:checked~section .j,
+        #c-materials[type="checkbox"]:checked~section .c,
+        #book-materials[type="checkbox"]:checked~section .b,
+        #pdf-materials[type="checkbox"]:checked~section .p,
+        #video-materials[type="checkbox"]:checked~section .v,
+        #article-materials[type="checkbox"]:checked~section .a,
+        #main-materials[type="checkbox"]:checked~section .m {
+            color: black !important;
         }
 
-        #jn-materials[type="checkbox"]:checked~article .j a,
-        #c-materials[type="checkbox"]:checked~article .c a,
-        #book-materials[type="checkbox"]:checked~article .b a,
-        #pdf-materials[type="checkbox"]:checked~article .p a,
-        #video-materials[type="checkbox"]:checked~article .v a,
-        #article-materials[type="checkbox"]:checked~article .a a,
-        #main-materials[type="checkbox"]:checked~article .m a {
+        #j-materials[type="checkbox"]:checked~section .j a,
+        #c-materials[type="checkbox"]:checked~section .c a,
+        #book-materials[type="checkbox"]:checked~section .b a,
+        #pdf-materials[type="checkbox"]:checked~section .p a,
+        #video-materials[type="checkbox"]:checked~section .v a,
+        #article-materials[type="checkbox"]:checked~section .a a,
+        #main-materials[type="checkbox"]:checked~section .m a {
             color: initial
         }
     </style>
@@ -94,31 +100,32 @@
     <article>
         <header>
             <h1>Data Science - just read everting below :)</h1>
+
         </header>
+        <input type="checkbox" id="main-materials" checked="checked">
+        <label for="main-materials">Main Materials</label>
+
+        <input type="checkbox" id="article-materials" checked="checked">
+        <label for="article-materials">Article Materials</label>
+
+        <input type="checkbox" id="pdf-materials" checked="checked">
+        <label for="pdf-materials">PDF Materials</label>
+
+        <input type="checkbox" id="video-materials" checked="checked">
+        <label for="video-materials">Video Materials</label>
+
+        <input type="checkbox" id="book-materials" checked="checked">
+        <label for="book-materials">Books Materials</label>
+        <input type="checkbox" id="c-materials" checked="checked">
+        <label for="c-materials">Course</label>
+        <input type="checkbox" id="j-materials" checked="checked">
+        <label for="j-materials">Jupyter Notebook</label>
         <section>
-            <input type="checkbox" id="main-materials" checked="checked">
-            <label for="main-materials">Main Materials</label>
-
-            <input type="checkbox" id="article-materials" checked="checked">
-            <label for="article-materials">Article Materials</label>
-
-            <input type="checkbox" id="pdf-materials" checked="checked">
-            <label for="pdf-materials">PDF Materials</label>
-
-            <input type="checkbox" id="video-materials" checked="checked">
-            <label for="video-materials">Video Materials</label>
-
-            <input type="checkbox" id="book-materials" checked="checked">
-            <label for="book-materials">Books Materials</label>
-            <input type="checkbox" id="c-materials" checked="checked">
-            <label for="c-materials">Course</label>
-            <input type="checkbox" id="j-materials" checked="checked">
-            <label for="j-materials">Jupyter Notebook</label>
             <article>
                 <h2>learning materials</h2>
                 <table>
                     <caption>Probability</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comment</th>
@@ -135,7 +142,7 @@
                 </table>
                 <table>
                     <caption>Statistics</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comment</th>
@@ -207,7 +214,7 @@
                 </table>
                 <table>
                     <caption>Statistica Inference</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -287,7 +294,7 @@
 
                 <table>
                     <caption>Machine Learning</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -338,7 +345,7 @@
 
                 <table>
                     <caption>Visualization</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -379,7 +386,7 @@
                 </table>
                 <table>
                     <caption> Using Jupyter Notebooks</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -411,7 +418,7 @@
                 <table>
                     <caption> NumPy Resources
                     </caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -472,7 +479,7 @@
                 <table>
                     <caption> Pandas Resources
                     </caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -522,7 +529,7 @@
                 <h2>Fast Learning Materials</h2>
                 <table>
                     <caption>Fast Learning Materials - Linear Regression</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -588,7 +595,7 @@
 
                 <table>
                     <caption>Fast Learning Materials - Supervised Learning</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -647,54 +654,54 @@
 
                 <table>
                     <caption>Fast Learning Materials - Natural Language Processing and Matrix Factorization</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
                     </tr>
-                    <tr class="">
+                    <tr class="b m p">
                         <td>PDF</td>
                         <td>
                             <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISLR - Boosting</a>
                         </td>
                         <td>Read Pages - 8.2.3, pg 321-324</td>
                     </tr>
-                    <tr class="">
+                    <tr class="b m p">
                         <td>PDF</td>
                         <td>
                             <a href="http://web.stanford.edu/~hastie/ElemStatLearn/printings/ESLII_print11.pdf">ESLII - Boosting and Additive Trees</a>
                         </td>
                         <td>Read Pages - 10-10.6, pg 337-350</td>
                     </tr>
-                    <tr class="">
+                    <tr class="b m p">
                         <td>PDF</td>
                         <td>
                             <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISLR - Support Vector Machines</a>
                         </td>
                         <td>Read Pages - 9-9.2, pg 337-349</td>
                     </tr>
-                    <tr class="">
+                    <tr class="b m p">
                         <td>PDF</td>
                         <td>
                             <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISLR - SVMs and Kernels</a>
                         </td>
                         <td>Read Pages - 9.3-9.3.2, pg 349-353</td>
                     </tr>
-                    <tr class="">
+                    <tr class="b m p">
                         <td>PDF</td>
                         <td>
                             <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwNDJFNmx2a2RBaTg/view">Data Science for Business</a>
                         </td>
                         <td>Read Pages ch 7-8, pg 187-232</td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="http://blog.christianperone.com/2011/09/machine-learning-text-feature-extraction-tf-idf-part-i/">Machine Learning :: Text feature extraction (tf-idf) – Part I </a>
                         </td>
                         <td></td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="http://blog.christianperone.com/2011/10/machine-learning-text-feature-extraction-tf-idf-part-ii/">Machine Learning :: Text feature extraction (tf-idf) – Part II </a>
@@ -702,21 +709,21 @@
                         <td></td>
                     </tr>
 
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="http://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/">Machine Learning :: Text feature extraction (tf-idf) – Part III </a>
                         </td>
                         <td></td>
                     </tr>
-                    <tr class="">
+                    <tr class="p">
                         <td>PDF</td>
                         <td>
                             <a href="http://desilinguist.org/pdf/crossroads.pdf">Getting Started on Natural Language Processing with Python</a>
                         </td>
                         <td></td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="http://www.quuxlabs.com/blog/2010/09/matrix-factorization-a-simple-tutorial-and-implementation-in-python/">Matrix Factorization: A Simple Tutorial and Implementation in Python
@@ -728,26 +735,26 @@
 
                 <table>
                     <caption> Fast Learning Materials - Time Series </caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
                     </tr>
-                    <tr class="">
+                    <tr class="b p">
                         <td>Book</td>
                         <td>
                             <a href="http://infolab.stanford.edu/~ullman/mmds/ch10.pdf">Mining Social-Network Graphs</a>
                         </td>
                         <td>Graph Theory and Analysis</td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="https://www.otexts.org/fpp">Forecasting: principles and practice </a>
                         </td>
                         <td>Graph Theory and Analysis</td>
                     </tr>
-                    <tr class="">
+                    <tr class="p">
                         <td>PDF</td>
                         <td>
                             <a href="http://conference.scipy.org/proceedings/scipy2011/pdfs/statsmodels.pdf">Time Series Analysis in Python with statsmodels</a>
@@ -760,19 +767,19 @@
 
                 <table>
                     <caption>Fast Learning Materials - Big Data</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
                     </tr>
-                    <tr class="">
+                    <tr class="b p">
                         <td>Book</td>
                         <td>
                             <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwc2ZnMFJmT2RLOXM/view">Learning Spark</a>
                         </td>
                         <td> Read ch 1-2, pg 1-22; ch 11: MLlib, pg 183-212</td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="https://aws.amazon.com/articles/run-spark-and-spark-sql-on-amazon-elastic-mapreduce/">Spark on AWS</a>
@@ -780,7 +787,7 @@
                         <td> Read ch 1-2, pg 1-22; ch 11: MLlib, pg 183-212</td>
                     </tr>
 
-                    <tr class="">
+                    <tr class="b">
                         <td>Book PDF</td>
                         <td>
                             <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwc2ZnMFJmT2RLOXM/view">Learning Spark</a>
@@ -788,7 +795,7 @@
                         <td></td>
                     </tr>
 
-                    <tr class="">
+                    <tr class="a">
                         <td>Blog</td>
                         <td>
                             <a href="http://blog.julien.org/2017/03/exploring-gdelt-data-set-with-amazon.html">Exploring the gdelt dataset with Amazon Athena</a>
@@ -796,49 +803,49 @@
                         <td></td>
                     </tr>
 
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-public-data-sets.html"> How To Use AWS Public Datasets</a>
                         </td>
                         <td>optinal</td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td>Info</td>
                         <td>
                             <a href="https://registry.opendata.aws/">Registry of Open datasets on AWS</a>
                         </td>
                         <td>optinal</td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td>Article</td>
                         <td>
                             <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html">Making an Amazon EBS Volume Available for Use on Linux</a>
                         </td>
                         <td>optinal</td>
                     </tr>
-                    <tr class="">
+                    <tr class="b p">
                         <td></td>
                         <td>
                             <a href="http://d0.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf">Big Data Analytics Options on AWS - Whitepaper Overview</a>
                         </td>
                         <td>optinal</td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td></td>
                         <td>
                             <a href="http://commoncrawl.org/2018/03/index-to-warc-files-and-urls-in-columnar-format/">Accessing Common Crawl using AWS Athena</a>
                         </td>
                         <td>optinal</td>
                     </tr>
-                    <tr class="">
+                    <tr class="a">
                         <td></td>
                         <td>
                             <a href="https://wwwdb.inf.tu-dresden.de/research-projects/dresden-web-table-corpus/">Common Crawl 2014 - Access 3.6 Billion webpages, 266 TB.</a>
                         </td>
                         <td>optinal</td>
                     </tr>
-                    <tr class="">
+                    <tr class="j">
                         <td></td>
                         <td>
                             <a href="https://github.com/commoncrawl/cc-pyspark">Process Common Crawl data with Python and Spark - github repo</a>
@@ -892,7 +899,7 @@
 
                 <table>
                     <caption>Fast Learning Materials - Recomendation Systems</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -930,7 +937,7 @@
 
                 <table>
                     <caption>Mining</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -960,7 +967,7 @@
 
                 <table>
                     <caption>Neural Networks</caption>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -995,7 +1002,7 @@
             <article>
                 <h2>Data Science Samples</h2>
                 <table>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
@@ -1028,7 +1035,7 @@
             <article>
                 <h2>Interview Questions</h2>
                 <table>
-                    <tr class="">
+                    <tr>
                         <th>Type</th>
                         <th>Link</th>
                         <th>Comments</th>
