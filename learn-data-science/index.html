@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alexei Matusevski</title>
+    <meta name="description" content="Alexei Matusevski - A compilation of materials to learnd data science">
+    <meta name="author" content="Alexei Matusevski" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="google-site-verification" content="TplhDelHikQyXZeQHjcAXcDLTTNn8PT_HoLgqJeuy6Y" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6378231-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-6378231-2');
+    </script>
+    <style>
+        caption {
+            text-align: left;
+            font-size: 1.2em;
+            color: lightcoral;
+        }
+
+        article {
+            margin: 5px;
+        }
+
+        h2 {
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+
+        table {
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background: #f1f1f1;
+        }
+
+        tr:nth-child(odd) {
+            background: #FFF
+        }
+
+        th {
+            text-align: left;
+            font-size: 0.8em;
+            color: lightgray;
+        }
+
+        .p,
+        .v,
+        .a,
+        .m {
+            color: lightgray;
+        }
+
+        .p a,
+        .v a,
+        .a a,
+        .m a {
+            color: lightgray
+        }
+
+        input[type="checkbox"] {
+            size: 20px;
+        }
+
+        #jn-materials[type="checkbox"]:checked~article .j,
+        #c-materials[type="checkbox"]:checked~article .c,
+        #book-materials[type="checkbox"]:checked~article .b,
+        #pdf-materials[type="checkbox"]:checked~article .p,
+        #video-materials[type="checkbox"]:checked~article .v,
+        #article-materials[type="checkbox"]:checked~article .a,
+        #main-materials[type="checkbox"]:checked~article .m {
+            color: black;
+        }
+
+        #jn-materials[type="checkbox"]:checked~article .j a,
+        #c-materials[type="checkbox"]:checked~article .c a,
+        #book-materials[type="checkbox"]:checked~article .b a,
+        #pdf-materials[type="checkbox"]:checked~article .p a,
+        #video-materials[type="checkbox"]:checked~article .v a,
+        #article-materials[type="checkbox"]:checked~article .a a,
+        #main-materials[type="checkbox"]:checked~article .m a {
+            color: initial
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Data Science - just read everting below :)</h1>
+        </header>
+        <section>
+            <input type="checkbox" id="main-materials" checked="checked">
+            <label for="main-materials">Main Materials</label>
+
+            <input type="checkbox" id="article-materials" checked="checked">
+            <label for="article-materials">Article Materials</label>
+
+            <input type="checkbox" id="pdf-materials" checked="checked">
+            <label for="pdf-materials">PDF Materials</label>
+
+            <input type="checkbox" id="video-materials" checked="checked">
+            <label for="video-materials">Video Materials</label>
+
+            <input type="checkbox" id="book-materials" checked="checked">
+            <label for="book-materials">Books Materials</label>
+            <input type="checkbox" id="c-materials" checked="checked">
+            <label for="c-materials">Course</label>
+            <input type="checkbox" id="j-materials" checked="checked">
+            <label for="j-materials">Jupyter Notebook</label>
+            <article>
+                <h2>learning materials</h2>
+                <table>
+                    <caption>Probability</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comment</th>
+                    </tr>
+                    <tr class="m b">
+                        <td>
+                            Book
+                        </td>
+                        <td>
+                            <a href="http://cs229.stanford.edu/section/cs229-prob.pdf">Review of Probability Theory</a>
+                        </td>
+                        <td> - </td>
+                    </tr>
+                </table>
+                <table>
+                    <caption>Statistics</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comment</th>
+                    </tr>
+                    <tr class="m b">
+                        <td>
+                            Book
+                        </td>
+                        <td>
+                            <a href="https://www.openintro.org/stat/textbook.php">Open Statistics</a>
+                        </td>
+                        <td>That is basic book that you have to read and it would be greate to accompish some excercises, download
+                            FREE PDF version</td>
+                    </tr>
+                    <tr class="p m">
+                        <td>
+                            PDF Table
+                        </td>
+                        <td>
+                            <a href="http://users.stat.ufl.edu/~athienit/Tables/Ztable.pdf">Z-Table</a>
+                        </td>
+                        <td>Standard Normal Probabilities</td>
+                    </tr>
+
+                    <tr class="m v">
+                        <td>Video Cource - Free</td>
+                        <td>
+                            <a href="https://stepik.org/course/76/">Stepik</a>
+                        </td>
+                        <td>Основы статистики - бесплатный видео курс с практическими занятиями (с этого курсе стоит начинать)</td>
+                    </tr>
+                    <tr class="m b">
+                        <td>Free PDF</td>
+                        <td>
+                            <a href="https://www-bcf.usc.edu/~gareth/ISL/" style="color:red; font-weight: bold">An Introduction to Statistical Learning</a>
+                        </td>
+                        <td>
+                            The Book - MUST READ!
+                        </td>
+                    </tr>
+                    <tr class="v m c">
+                        <td>Course</td>
+                        <td>
+                            <a href="https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/ba1951b8f66c4cdca2fcaabcdc91b792/">Stanford edu</a>
+                        </td>
+                        <td>Gread deep Statistics Course </td>
+                    </tr>
+                    <tr class="p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="https://www.stat.auckland.ac.nz/~brewer/stats331.pdf">Introduction to Bayesian Statistics</a>
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Play List</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=HVlXEwVD8dw&list=PLuRpZIQQRQedb2GM2WhKSEzojGN-BIIR9">Beginner Video Series on Bayesian Stats</a>
+                        </td>
+                        <td>Bayesian Thinking</td>
+                    </tr>
+                    <tr class="a">
+                        <td>Artcile - Cources</td>
+                        <td>
+                            <a href="https://onlinecourses.science.psu.edu/stat414/"> Intro Probability Theory</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table>
+                    <caption>Statistica Inference</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="a">
+                        <td>Articles</td>
+                        <td>
+                            <a href="http://stattrek.com/probability-distributions/probability-distribution.aspx">Probability Distibuion</a>
+                        </td>
+                        <td>-</td>
+                    </tr>
+                    <tr class="a">
+                        <td>Python Scipy</td>
+                        <td>
+                            <a href="https://docs.scipy.org/doc/scipy/reference/stats.html">scipy reference stats</a>
+                        </td>
+                        <td>scipy.stats - Click a distribution to see how to plot it</td>
+                    </tr>
+                    <tr class="c">
+                        <td>Oncline Course</td>
+                        <td>
+                            <a href="https://lagunita.stanford.edu/courses/HumanitiesSciences/StatLearning/Winter2016/info">Free online course on statistical learning. Based on "Introduction to Statistical Learning"</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="a">
+                        <td>Article (short)</td>
+                        <td>
+                            <a href="http://onlinestatbook.com/2/estimation/confidence.html">Confidence Intervals </a>
+                        </td>
+                        <td>It's important to have solid understanding of confidence Intervals</td>
+                    </tr>
+                    <tr class="a">
+                        <td>Article (short)</td>
+                        <td>
+                            <a href="http://onlinestatbook.com/2/estimation/mean.html">Mean</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="v">
+                        <td>Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=_nhgHjdLE-I">Sampling - Bootstrap</a>
+                        </td>
+                        <td>Important</td>
+                    </tr>
+                    <tr class="v">
+                        <td>Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=I_dhPETvll8">Maximum Likelihood estimation - an introduction part 1 </a>
+                        </td>
+                        <td>Important</td>
+                    </tr>
+                    <tr class="v c">
+                        <td>Video</td>
+                        <td>
+                            <a href="https://www.khanacademy.org/math/ap-statistics/sampling-distribution-ap/sampling-distribution-mean/v/central-limit-theorem">Central Limit Theorem</a>
+                        </td>
+                        <td>Important</td>
+                    </tr>
+                    <tr class="v">
+                        <td>Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=5ABpqVSx33I">Z-statistics vs. T-statistics</a>
+                        </td>
+                        <td>Important</td>
+                    </tr>
+                    <tr class="v">
+                        <td>Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=-FtlH4svqx4">Hypothesis testing and p-values</a>
+                        </td>
+                        <td>Important</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption>Machine Learning</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Play List</td>
+                        <td>
+                            <a href="https://youtu.be/2kT6QOVSgSg">Machine Learning with scikit learn Part One | SciPy 2017 Tutorial</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="j">
+                        <td>Jupyter Notebook</td>
+                        <td>
+                            <a href="https://notebooks.azure.com/seanreed1111/libraries/handson-ml">Handon Machine Learning</a>
+                        </td>
+                        <td>Practicle and theorecal aprouche on machine learnin</td>
+                    </tr>
+                    <tr class="a">
+                        <td>Cheat Sheet</td>
+                        <td>
+                            <a href="https://www.datacamp.com/community/blog/scikit-learn-cheat-sheet">Scikit Learn Cheat Sheet</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="j">
+                        <td>Jupyter Notebooks</td>
+                        <td>
+                            <a href="https://github.com/amueller/introduction_to_ml_with_python">Introduction To ML With Python</a>
+                        </td>
+                        <td>Notebooks and code for the book "Introduction to Machine Learning with Python" </td>
+                    </tr>
+                    <tr class="j">
+                        <td>Jupyter Notebooks</td>
+                        <td>
+                            <a href="https://github.com/amueller/scipy-2017-sklearn">scipy 2017 sklearn</a>
+                        </td>
+                        <td>SciPy 2016 Scikit-learn Tutorial</td>
+                    </tr>
+                    <tr class="b m">
+                        <td>Amazon Book</td>
+                        <td>
+                            <a href="https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413">Introduction to Machine Learning in Python</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption>Visualization</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="v">
+                        <td>YTP</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=qqwf4Vuj8oM&list=PLeo1K3hjS3uu4Lr8_kro2AqaO6CFYgKOl">Matplotlib tutorial Video</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://youtu.be/p7Mj-4kASmI">Matplotlib Beginner Video SciPy 2016</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/playlist?list=PLpMW-laAm5rMW_xSouD04bnc51i3iCkH-">Plotting with Seaborn</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="v">
+                        <td>YT Play List</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=RFcPaLp9aC8&list=PLpMW-laAm5rNT0lKJ8LN1hKylEW8uiayD">Plotting with Matplotlib</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+                <table>
+                    <caption> Using Jupyter Notebooks</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+
+
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=b8g-8T0amuk">Intro to Jupyter Notebooks</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=k7WXVWej-NY">Jupyter Notebooks in Depth</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://youtu.be/FwUcJFSAfQw ">Ten Things You Should Really Know about Jupyter Notebooks</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table>
+                    <caption> NumPy Resources
+                    </caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+
+
+                    <tr class="j">
+                        <td>Github</td>
+                        <td>
+                            <a href="https://github.com/enthought/Numpy-Tutorial-SciPyConf-2017">Numpy Tutorial from SciPy 2017 Conference</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="j">
+                        <td>Excercises</td>
+                        <td>
+                            <a href="https://github.com/rougier/numpy-100">100 Numpy Exercises</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="a">
+                        <td>Quickstart</td>
+                        <td>
+                            <a href="https://docs.scipy.org/doc/numpy/user/quickstart.html">Official Numpy Quickstart Tutorial</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="a">
+                        <td>Tutorial</td>
+                        <td>
+                            <a href="https://www.hackerearth.com/practice/machine-learning/data-manipulation-visualisation-r-python/tutorial-data-manipulation-numpy-pandas-python/tutorial/">tutorial for Data Manipulation in Python</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Play List</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=rN0TREj8G7U&list=PLeo1K3hjS3uset9zIVzJWqplaWBiacTEU">Numpy Tutorial - Introduction Video</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://youtu.be/lKcwuPnSHIQ">Numpy - Beginner Talk from SciPy 2017 (3hrs)</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="https://github.com/enthought/Numpy-Tutorial-SciPyConf-2016/blob/master/slides.pdf">Enthought Numpy-Tutorial Slides (free pdf)</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                </table>
+                <table>
+                    <caption> Pandas Resources
+                    </caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+
+
+                    <tr class="j">
+                        <td>Gythub</td>
+                        <td>
+                            <a href="https://github.com/fonnesbeck/ngcm_pandas_2017">Python Data Analysis with Pandas (Notebooks #1-3)h</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="j">
+                        <td>Github tutorial</td>
+                        <td>
+                            <a href="https://github.com/brandon-rhodes/pycon-pandas-tutorial">Brandon Rhodes Pandas From The Ground Up Github Tutorialh</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://youtu.be/5JnMutdy6Fw">Brandon Rhodes Pandas from the Ground Up Videoh</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://youtu.be/dye7rDktJ2E">Introduction to Pandas Video by Daniel Chen, from PyData Carolinas 2016h</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://youtu.be/6ohWS7J1hVA">Analyzing and Manipulating Data with Pandas Beginner Videoh</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Fast Learning Materials</h2>
+                <table>
+                    <caption>Fast Learning Materials - Linear Regression</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="v m">
+                        <td>YTP</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=r0tRgR74n_g&index=28&list=PLFDbGp5YzjqXQ4oE4w9GVWdiokWB9gEpm">Bayesian statistics: a comprehensive course</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="a m">
+                        <td>Article</td>
+                        <td>
+                            <a href="http://stevehanov.ca/blog/index.php?id=132">The Multi-armed bandit problem </a>
+                        </td>
+                        <td>A / B testing - very interesting short article</td>
+                    </tr>
+                    <tr class="p m">
+                        <td>PDF Lecture</td>
+                        <td>
+                            <a href="http://cs229.stanford.edu/section/cs229-linalg.pdf">CS229 Linear Algebra Review and Reference</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="p m">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf">CS229 Lecture notes</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISL: Linear Regression</a>
+                        </td>
+                        <td>Read Pages - 3-3.2, pg 59-82</td>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">Linear Regression - Springer Texts in Statistics</a>
+                        </td>
+                        <td>Read Pages - 3.3-3.4, pg 82-104</td>
+                    </tr>
+
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">Cross Validation and Regularization</a>
+                        </td>
+                        <td>Read pages - 5-5.1.4, pg 175-184</td>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">Shrinkage Methods</a>
+                        </td>
+                        <td>Read pages - 6.2, pg 214-228</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption>Fast Learning Materials - Supervised Learning</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">Book "Machine learning in action"</a>
+                        </td>
+                        <td>Read 4-4.4, pg 127-137</td>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwcUNWWnFaRWgwTDA/view">Book "Machine learning in action"</a>
+                        </td>
+                        <td>Read section 7.7, pg 142-148</td>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwcUNWWnFaRWgwTDA/view">Book "Machine learning in action"</a>
+                        </td>
+                        <td>Read section ch 5, pg 83-90, 90-96</td>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwcUNWWnFaRWgwTDA/view">Book "Machine learning in action"</a>
+                        </td>
+                        <td>Read section - 2.1, pg 18-24, 3.1 pg 37-48;
+                        </td>
+                    </tr>
+                    <tr class="b m p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">Classification</a>
+                        </td>
+                        <td>Read Pages - 8.1 pg 303-316 </td>
+                    </tr>
+                    <tr class="a m">
+                        <td>Article</td>
+                        <td>
+                            <a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">Decision Tree Visualizatoin</a>
+                        </td>
+                        <td>Really cool Visualization</td>
+                    </tr>
+                    <tr class="p b m">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISLR - Classification Trees</a>
+                        </td>
+                        <td>Read Pages - 8.1.2-8.2.2, pg 311-321</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption>Fast Learning Materials - Natural Language Processing and Matrix Factorization</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISLR - Boosting</a>
+                        </td>
+                        <td>Read Pages - 8.2.3, pg 321-324</td>
+                    </tr>
+                    <tr class="">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://web.stanford.edu/~hastie/ElemStatLearn/printings/ESLII_print11.pdf">ESLII - Boosting and Additive Trees</a>
+                        </td>
+                        <td>Read Pages - 10-10.6, pg 337-350</td>
+                    </tr>
+                    <tr class="">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISLR - Support Vector Machines</a>
+                        </td>
+                        <td>Read Pages - 9-9.2, pg 337-349</td>
+                    </tr>
+                    <tr class="">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www-bcf.usc.edu/~gareth/ISL/ISLR%20Sixth%20Printing.pdf">ISLR - SVMs and Kernels</a>
+                        </td>
+                        <td>Read Pages - 9.3-9.3.2, pg 349-353</td>
+                    </tr>
+                    <tr class="">
+                        <td>PDF</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwNDJFNmx2a2RBaTg/view">Data Science for Business</a>
+                        </td>
+                        <td>Read Pages ch 7-8, pg 187-232</td>
+                    </tr>
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="http://blog.christianperone.com/2011/09/machine-learning-text-feature-extraction-tf-idf-part-i/">Machine Learning :: Text feature extraction (tf-idf) – Part I </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="http://blog.christianperone.com/2011/10/machine-learning-text-feature-extraction-tf-idf-part-ii/">Machine Learning :: Text feature extraction (tf-idf) – Part II </a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="http://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/">Machine Learning :: Text feature extraction (tf-idf) – Part III </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://desilinguist.org/pdf/crossroads.pdf">Getting Started on Natural Language Processing with Python</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="http://www.quuxlabs.com/blog/2010/09/matrix-factorization-a-simple-tutorial-and-implementation-in-python/">Matrix Factorization: A Simple Tutorial and Implementation in Python
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption> Fast Learning Materials - Time Series </caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="">
+                        <td>Book</td>
+                        <td>
+                            <a href="http://infolab.stanford.edu/~ullman/mmds/ch10.pdf">Mining Social-Network Graphs</a>
+                        </td>
+                        <td>Graph Theory and Analysis</td>
+                    </tr>
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://www.otexts.org/fpp">Forecasting: principles and practice </a>
+                        </td>
+                        <td>Graph Theory and Analysis</td>
+                    </tr>
+                    <tr class="">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://conference.scipy.org/proceedings/scipy2011/pdfs/statsmodels.pdf">Time Series Analysis in Python with statsmodels</a>
+                        </td>
+                        <td>statsmodels - is a ptyhon library</td>
+                    </tr>
+
+                </table>
+
+
+                <table>
+                    <caption>Fast Learning Materials - Big Data</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="">
+                        <td>Book</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwc2ZnMFJmT2RLOXM/view">Learning Spark</a>
+                        </td>
+                        <td> Read ch 1-2, pg 1-22; ch 11: MLlib, pg 183-212</td>
+                    </tr>
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://aws.amazon.com/articles/run-spark-and-spark-sql-on-amazon-elastic-mapreduce/">Spark on AWS</a>
+                        </td>
+                        <td> Read ch 1-2, pg 1-22; ch 11: MLlib, pg 183-212</td>
+                    </tr>
+
+                    <tr class="">
+                        <td>Book PDF</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwc2ZnMFJmT2RLOXM/view">Learning Spark</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="">
+                        <td>Blog</td>
+                        <td>
+                            <a href="http://blog.julien.org/2017/03/exploring-gdelt-data-set-with-amazon.html">Exploring the gdelt dataset with Amazon Athena</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-public-data-sets.html"> How To Use AWS Public Datasets</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="">
+                        <td>Info</td>
+                        <td>
+                            <a href="https://registry.opendata.aws/">Registry of Open datasets on AWS</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html">Making an Amazon EBS Volume Available for Use on Linux</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="">
+                        <td></td>
+                        <td>
+                            <a href="http://d0.awsstatic.com/whitepapers/Big_Data_Analytics_Options_on_AWS.pdf">Big Data Analytics Options on AWS - Whitepaper Overview</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="">
+                        <td></td>
+                        <td>
+                            <a href="http://commoncrawl.org/2018/03/index-to-warc-files-and-urls-in-columnar-format/">Accessing Common Crawl using AWS Athena</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="">
+                        <td></td>
+                        <td>
+                            <a href="https://wwwdb.inf.tu-dresden.de/research-projects/dresden-web-table-corpus/">Common Crawl 2014 - Access 3.6 Billion webpages, 266 TB.</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="">
+                        <td></td>
+                        <td>
+                            <a href="https://github.com/commoncrawl/cc-pyspark">Process Common Crawl data with Python and Spark - github repo</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="a">
+                        <td></td>
+                        <td>
+                            <a href="https://registry.opendata.aws/amazon-reviews/">Amazon Customer Reviews Dataset containing 130+ million customer reviews</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="a">
+                        <td></td>
+                        <td>
+                            <a href="https://aws.amazon.com/blogs/big-data/10-visualizations-to-try-in-amazon-quicksight-with-sample-data/">10 Visualizations To Try In Amazon Quicksight With Sample Data</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="p">
+                        <td></td>
+                        <td>
+                            <a href="http://file.allitebooks.com/20161012/Spark%202.0%20for%20Beginners.pdf">SparkforBeginners.pdf</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="a">
+                        <td></td>
+                        <td>
+                            <a href="https://databricks.com/try-databricks">Test Spark for Free in the cloud from DataBricks</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="v">
+                        <td></td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=aLOZJTgc6zM&list=PL-x35fyliRwjq4stksT0rzYYY_N_Is4eq">Videos: Data Science Training With Apache Spark - SparkSummit East 2017</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+                    <tr class="v">
+                        <td></td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=K14plpZgy_c">Video-Using Apache Spark 2.0 to Analyze the City of San Francisco's Open Data</a>
+                        </td>
+                        <td>optinal</td>
+                    </tr>
+
+                </table>
+
+                <table>
+                    <caption>Fast Learning Materials - Recomendation Systems</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="v">
+                        <td>Book</td>
+                        <td>
+                            <a href="https://drive.google.com/file/d/0B1cm3fV8cnJwcUNWWnFaRWgwTDA/view">Book "Machine learning in action"</a>
+                        </td>
+                        <td>Read section ch 14.4-14.5 pg 286-295</td>
+                    </tr>
+                    <tr class="b p">
+                        <td>Book </td>
+                        <td>
+                            <a href="http://infolab.stanford.edu/~ullman/mmds/ch9.pdf">Recommendation Systems</a>
+                        </td>
+                        <td>Chapter 9 of Mining Massive Datasets book</td>
+                    </tr>
+                    <tr class="p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://www.columbia.edu/~jwp2128/Teaching/W4721/Spring2015/papers/ieeecomputer.pdf">Matrix Factorization Techniques for Recommender Systems</a>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="p b">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://files.grouplens.org/papers/algorithmstouserexperience.pdf">Recommender systems: from algorithms to user experience</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption>Mining</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="p b">
+                        <td></td>
+                        <td>
+                            <a href="http://infolab.stanford.edu/~ullman/mmds/book.pdf">Book: Mining of Massive Datasets</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="v">
+                        <td></td>
+                        <td>
+                            <a href="https://www.youtube.com/playlist?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV">YouTube Videos: Mining of Massive Datasets - Stanford University </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="https://arxiv.org/pdf/1710.01779.pdf">NLP:Building a Web-Scale Dependency-Parsed Corpus from Common Crawl</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <table>
+                    <caption>Neural Networks</caption>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="v">
+                        <td>YT Video</td>
+                        <td>
+                            <a href="https://www.youtube.com/watch?v=bxe2T-V8XRs">Neural Networks Demystified [Part 1: Data and Architecture] </a>
+                        </td>
+                        <td> - </td>
+                    </tr>
+                    <tr class="a">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://www.otexts.org/fpp">Forecasting: principles and practice </a>
+                        </td>
+                        <td>Graph Theory and Analysis</td>
+                    </tr>
+                    <tr class="p">
+                        <td>PDF</td>
+                        <td>
+                            <a href="http://conference.scipy.org/proceedings/scipy2011/pdfs/statsmodels.pdf">Time Series Analysis in Python with statsmodels</a>
+                        </td>
+                        <td>statsmodels - is a ptyhon library</td>
+                    </tr>
+
+                </table>
+
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Data Science Samples</h2>
+                <table>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="a">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://www.analyticsvidhya.com/blog/2016/10/17-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/">17 Data Science Projects</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="a">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://www.quora.com/What-kind-of-portfolio-should-an-entry-level-data-scientist-have/answer/Samuel-Pong?share=92c9a759&srid=uMqD">Quora: What kind of portfolio should an entry-level data scientist have?</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr class="a">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://grouplens.org/datasets/serendipity-2018/">Investigating Serendipity in Recommender Systems Based on Real User Feedback</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Interview Questions</h2>
+                <table>
+                    <tr class="">
+                        <th>Type</th>
+                        <th>Link</th>
+                        <th>Comments</th>
+                    </tr>
+                    <tr class="a">
+                        <td>Article</td>
+                        <td>
+                            <a href="https://towardsdatascience.com/data-science-and-machine-learning-interview-questions-3f6207cf040b">Data Science and Machine Learning Interview Questions </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <footer>
+            <time datetime="2018-06-29">2018 June 29</time>
+            <a href="mail:MAlexeyUS@gmail.com">Mail me</a>
+        </footer>
+    </article>
+</body>
+
+</html>
